@@ -3,10 +3,13 @@ using Microsoft.AspNetCore.Mvc;
 using test_apis.Data;
 using Microsoft.EntityFrameworkCore;
 using test_apis.Data.Model;
+using Microsoft.AspNetCore.Authorization;
 namespace test_apis.Controllers
 {
+    
     [Route("api/[controller]")]
     [ApiController]
+ 
     public class CategoryController : ControllerBase
     {
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using test_apis.Data;
 using test_apis.Data.Model;
@@ -8,6 +9,7 @@ using test_apis.Models;
 
 namespace test_apis.Controllers
 {
+ 
     [Route("api/[controller]")]
     [ApiController]
     public class ItemController : ControllerBase
